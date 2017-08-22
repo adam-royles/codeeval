@@ -10,8 +10,8 @@ public class FizzBuzz {
 
     public static void main(String[] args) throws IOException {
 
-//        File file = new File(args[0]);
-        BufferedReader buffer = new BufferedReader(new FileReader("src/testing.txt"));
+        File file = new File(args[0]);
+        BufferedReader buffer = new BufferedReader(new FileReader(file));
         String line;
         try{
         while ((line = buffer.readLine()) != null) {
